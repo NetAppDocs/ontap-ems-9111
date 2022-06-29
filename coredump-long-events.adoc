@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: coredump-long-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: coredump.long events
+---
+
+= coredump.long events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== coredump.long.running.msg
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when the coredump manager thread has finished processing a message that took longer than expected, as defined by an internal threshold.
+*Corrective Action*::
+(None).
+*Syslog Message*::
+Coredump manager finished processing a long running message: %s took %lu ms.
+*Parameters*::
+*message_type* (STRING): Coredump message type.
+*duration* (LONGINT): Message processing duration, in milliseconds.
+*threshold* (LONGINT): Message processing threshold, in milliseconds.

@@ -1,0 +1,31 @@
+---
+sidebar: sidebar
+permalink: nblade-execsoverlimit-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: nblade.execsoverlimit events
+---
+
+= nblade.execsoverlimit events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== nblade.execsOverLimit
+*Severity*::
+ERROR
+*Description*::
+This message occurs when a connection has more active requests than the current connection threshold allows to be in flight, resulting in request throttling. Connection performance might be degraded.
+*Corrective Action*::
+Check the RPC slot setting on the client. Refer to TR-4067 "NFS Best Practice and Implementation Guide" for the recommended value and how to set it.
+*Syslog Message*::
+The number of in-flight requests from client IP "[%s]:%d" to destination LIF "%s" (Vserver "%d") is greater than the maximum number of in-flight requests allowed (%d). The client might experience degraded performance due to request throttling.
+*Parameters*::
+*clientIpAddress* (STRING): IP address of the client.
+*clientPort* (INT): Network port of the client.
+*lifIpAddress* (STRING): IP address of the network interface (LIF).
+*vserverId* (INT): ID of the Vserver.
+*execsLimit* (INT): Maximum number of in-flight requests allowed per connection.

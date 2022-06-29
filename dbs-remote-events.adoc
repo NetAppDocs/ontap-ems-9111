@@ -1,0 +1,33 @@
+---
+sidebar: sidebar
+permalink: dbs-remote-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: dbs.remote events
+---
+
+= dbs.remote events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== dbs.remote.cluster
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when a Distributed Block Store (DBS) event such as a change in cluster pair connectivity status occurs. If the original DBS event specifies multiple drives, then an EMS event is generated for each drive.
+*Corrective Action*::
+None.
+*Syslog Message*::
+This is a Distributed Block Store remote cluster event. The event is \"%s\" of type \"%s\" for Service ID \"%u\" on node \"%u\". Drive ID = %u. Event ID = %u.
+*Parameters*::
+*evtMessage* (STRING): Description of the DBS event, including context details.
+*evtType* (STRING): Type of the original DBS event.
+*serviceID* (INT): Service ID that identifies the associated DBS service. It will be "0" if there is no associated service.
+*nodeID* (INT): Node ID number of the associated node. It will be "0" if there is no associated node.
+*driveID* (INT): Drive ID number of the associated drive. It will be "0" if there is no associated drive.
+*evtID* (INT): DBS event ID number.
+*evtDetails* (STRING): Specific details of the DBS event. It may be a string, in JSON format, or empty.

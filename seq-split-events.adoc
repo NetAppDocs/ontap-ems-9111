@@ -1,0 +1,27 @@
+---
+sidebar: sidebar
+permalink: seq-split-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: seq.split events
+---
+
+= seq.split events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== seq.split.with.LUN.create
+*Severity*::
+ALERT
+*Description*::
+This message occurs when the SnapMirror Synchronous sequential split is enabled and a LUN create operation is encountered. LUN create operations are blocked since sequential split is meant to be enabled for NAS workloads only. SAN operating workloads experience a higher latency and it is not recommended that they be used with sequential splitting mode.
+*Corrective Action*::
+Switch back to parallel split mode by running the command (priv: advanced) "snapmirror policy modify -policy (policy name) -are-data-ops-sequentially-split false" or opt to use system default policies of Sync and StrictSync for the Snapmirror Synchronous relationship.
+*Syslog Message*::
+LUN create Operation encountered with sequential splitting enabled for relationship with UUID "%s".
+*Parameters*::
+*relationship_id* (STRING): SnapMirror relationship universal unique identifier (UUID).

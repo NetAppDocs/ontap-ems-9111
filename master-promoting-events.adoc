@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: master-promoting-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: master.promoting events
+---
+
+= master.promoting events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== master.promoting.cm
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when the node is promoted to the cluster master and takes constrol as the master.
+*Corrective Action*::
+(None).
+*Syslog Message*::
+Service ID "%u" on node ID "%u" is taking over as the cluster master.
+*Parameters*::
+*serviceID* (INT): Service ID that identifies the associated master service.
+*nodeID* (INT): Node ID number of the associated node.
