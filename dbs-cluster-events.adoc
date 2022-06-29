@@ -1,0 +1,33 @@
+---
+sidebar: sidebar
+permalink: dbs-cluster-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: dbs.cluster events
+---
+
+= dbs.cluster events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== dbs.cluster
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when a distributed block store event related to cluster operations occurs. If the original distributed block store event specifies multiple drives, then an EMS event is generated for each drive.
+*Corrective Action*::
+None.
+*Syslog Message*::
+A distributed block store event \"%s\" of type \"%s\" for Service ID %u on node %u Drive ID = %u. Event ID = %u.
+*Parameters*::
+*evtMessage* (STRING): Description of the distributed block store event, including context details.
+*evtType* (STRING): Type of the original distributed block store event.
+*serviceID* (INT): Service ID that identifies the associated distributed block store service. It is "0" if there is no associated service.
+*nodeID* (INT): Node ID number of the associated node. It is "0" if there is no associated node.
+*driveID* (INT): Drive ID number of the associated drive. It is "0" if there is no associated drive.
+*evtID* (INT): Distributed block store event ID number.
+*evtDetails* (STRING): Specific details of the distributed block store event. It might a string, in JSON format, or empty.
