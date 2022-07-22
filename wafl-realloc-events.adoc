@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: wafl-realloc-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: wafl.realloc events
+---
+
+= wafl.realloc events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== wafl.realloc.start.afs.first
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when the deswizzle scanner enables block reallocation redirection on the aggregate for a particular volume because the wafl.deswizzle.afs.first option is set.
+*Corrective Action*::
+(None).
+*Syslog Message*::
+Block reallocation scan on aggregate %s has been enabled for volume %s due to afs.first option being on for the deswizzler scanner.
+*Parameters*::
+*aggr* (STRING): Aggregate name.
+*vol* (STRING): Volume name.

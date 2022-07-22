@@ -1,0 +1,51 @@
+---
+sidebar: sidebar
+permalink: master-cast-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: master.cast events
+---
+
+= master.cast events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== master.cast.cm.vote.against
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when the master service of the associated node can not connect to current cluster master and try to cast a vote against current cluster master in the global database. The current cluster master will be demoted if more than half of the cluster nodes vote against it, and a new cluster master will be promoted.
+*Corrective Action*::
+(None).
+*Syslog Message*::
+Service ID "%u" on node ID "%u" has voted against current cluster master with sequence number "%u" based on "%s", the current MVIP connection state is %s with duration %s, and the best connection state is %s.
+*Parameters*::
+*serviceID* (INT): Service ID that identifies the associated master service.
+*nodeID* (INT): Node ID number of the associated node.
+*sequenceNumber* (INT): The sequence number of the cluster master.
+*reason* (STRING): The reason for casting the vote against current cluster master.
+*currentState* (STRING): The current MVIP connection state.
+*currentStateDuration* (STRING): The duration of current MVIP connection state.
+*highestState* (STRING): The best MVIP connection state since the node connects to current cluster master.
+
+== master.cast.cm.vote.ex
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when the master service on the associated node is unable to cast a vote to update the connection status with current cluster master in global database since it has lost connection to the database server.
+*Corrective Action*::
+(None).
+*Syslog Message*::
+Service ID "%u" on node ID "%u" failed to cast a vote to cluster master with sequence number is "%u" due to exception (%s). The connection state is %s with duration %s, and the best connection state is %s.
+*Parameters*::
+*serviceID* (INT): Service ID that identifies the associated master service.
+*nodeID* (INT): Node ID number of the associated node.
+*sequenceNumber* (INT): The sequence number of current cluster master.
+*exceptionCode* (STRING): The exception code.
+*currentState* (STRING): The current MVIP connection state.
+*currentStateDuration* (STRING): The duration of current MVIP connection state.
+*highestState* (STRING): The best MVIP connection state since the node connects to current cluster master.

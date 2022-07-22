@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: fpolicy-eagain-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: fpolicy.eagain events
+---
+
+= fpolicy.eagain events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== fpolicy.eagain.on.write
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when there is no space in the send buffer for sending a message to the FPolicy server. The FPolicy server is apparently slow in reading notifications.
+*Corrective Action*::
+Occasional EAGAIN (resource temporarily unavailable) errors can occur for transient network issues. If this message occurs frequently, check the connection between the FPolicy server and the node. If the errors persist, contact the FPolicy application's vendor support.
+*Syslog Message*::
+Write returned EAGAIN while sending notification to the FPolicy server "%s" for vserver ID %d.
+*Parameters*::
+*fpserver* (STRING): IP address of the FPolicy server.
+*vserver* (INT): Vserver ID.

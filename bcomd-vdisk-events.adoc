@@ -1,0 +1,30 @@
+---
+sidebar: sidebar
+permalink: bcomd-vdisk-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: bcomd.vdisk events
+---
+
+= bcomd.vdisk events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== bcomd.vdisk.transition
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when a user attempts to convert a LUN into an NVMe namespace or vice-versa.
+*Corrective Action*::
+(None).
+*Syslog Message*::
+Conversion for "%s", Vserver "%s" to type "%s" completed with status "%s".
+*Parameters*::
+*source_vdisk_path* (STRING): Path to the LUN or NVMe namespace to be converted.
+*vserver* (STRING): Name of the Vserver.
+*destination_vdisk_type* (STRING): Destination vdisk type after conversion.
+*status* (STRING): Status of conversion operation.
