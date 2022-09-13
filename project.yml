@@ -10,6 +10,12 @@ settings:
     harmony_enabled: false
     github_edit: false
     github_issue: false
+    
+product-family: 
+  name: ONTAP
+  repo: ontap-family
+  sidebar_label: All ONTAP product documentation
+  
 sidebar:
   entries:
   - title: ONTAP 9.11.1 EMS reference
