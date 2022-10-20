@@ -45,7 +45,12 @@ EMERGENCY
 *Description*::
 This message occurs when the Kernel Cluster Services (KCS) Connectivity, Liveliness, Availability Monitor (CLAM) determines that a node in the cluster is out of "cluster quorum".
 *Corrective Action*::
-Take one or more of the following actions: - Follow the KB article 2022109 to troubleshoot the resolve the issue. - Check the connectivity of the node to the cluster interconnect and fix any problems. - If the local node is administratively disabled, enable it by running the following command from the clustershell 'cluster modify -node node_name -eligibility true'. - If the node is supposed to be in an HA pair but is not, enable the HA pair. You can check whether a node is in an HA pair by running 'storage failover show' command from the clustershell. You can enable storage failover by running the 'storage failover modify -enabled true' command from the clustershell. - If there is a version incompatibility between the local node and the other nodes in the cluster, upgrade the nodes as needed. You can see the software version of all the nodes from the clustershell using the 'version -node *' command.
+Take one or more of the following actions: 
+* Follow the link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Node_Out_Of_Quorum_-_AutoSupport_message[KB article: Node Out of Quorum - AutoSupport message] to troubleshoot and resolve the issue. 
+* Check the connectivity of the node to the cluster interconnect and fix any problems. 
+* If the local node is administratively disabled, enable it by running the following command from the clustershell 'cluster modify -node node_name -eligibility true'. 
+* If the node is supposed to be in an HA pair but is not, enable the HA pair. You can check whether a node is in an HA pair by running 'storage failover show' command from the clustershell. You can enable storage failover by running the 'storage failover modify -enabled true' command from the clustershell. 
+* If there is a version incompatibility between the local node and the other nodes in the cluster, upgrade the nodes as needed. You can see the software version of all the nodes from the clustershell using the 'version -node *' command.
 *Syslog Message*::
 Node (name=%s, ID=%llu) is out of "CLAM quorum" (reason=%s).
 *Parameters*::
@@ -102,3 +107,5 @@ CLAM on local node (ID:%llu) has stopped to vote for its HA partner node (ID:%ll
 *Parameters*::
 *local_id* (LONGINT): Node ID of the local node.
 *partner_id* (LONGINT): Node ID of the partner node.
+
+//2022 oct 19 BURT 1503224
