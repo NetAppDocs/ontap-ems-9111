@@ -6,7 +6,6 @@ summary: seq.split events
 ---
 
 = seq.split events
-:toc: macro
 :toclevels: 1
 :hardbreaks:
 :nofooter:
