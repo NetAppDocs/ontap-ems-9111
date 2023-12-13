@@ -6,7 +6,6 @@ summary: master.promoting events
 ---
 
 = master.promoting events
-:toc: macro
 :toclevels: 1
 :hardbreaks:
 :nofooter:

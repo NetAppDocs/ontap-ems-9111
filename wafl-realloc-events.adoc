@@ -6,7 +6,6 @@ summary: wafl.realloc events
 ---
 
 = wafl.realloc events
-:toc: macro
 :toclevels: 1
 :hardbreaks:
 :nofooter:
