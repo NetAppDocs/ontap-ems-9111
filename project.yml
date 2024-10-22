@@ -1,5 +1,5 @@
 settings:
-  name: ONTAP 
+  name: ONTAP  
   downlevel: true
   internal:
     pdf_enabled: true
@@ -15,7 +15,7 @@ settings:
     - version-number: "9.11.1"
       url: /ontap-ems-9111
     - version-number: "9.16.1"
-      url: /ontap-ems
+      url: /ontap-ems 
     - version-number: "9.15.1"
       url: /ontap-ems-9151      
     - version-number: "9.14.1"
