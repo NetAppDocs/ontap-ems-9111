@@ -13,6 +13,9 @@ summary: wafl.realloc events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+wafl.realloc EMS events occur when the deswizzle scanner enables block reallocation redirection on an aggregate for a volume because the afs.first option is set.
+
 == wafl.realloc.start.afs.first
 *Severity*::
 NOTICE

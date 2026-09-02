@@ -13,6 +13,9 @@ summary: dipmon.dataip events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+dipmon.dataip EMS events occur when ONTAP encounters issues associated with data IP address responsiveness.
+
 == dipmon.dataip.responsive
 *Severity*::
 NOTICE

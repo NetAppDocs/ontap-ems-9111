@@ -13,6 +13,9 @@ summary: dbs.secondary events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+dbs.secondary EMS events occur when the Distributed Block Store detects that Slice volume secondary write cache has reached a fullness warning threshold.
+
 == dbs.secondary.cache.thresh
 *Severity*::
 ALERT

@@ -13,6 +13,9 @@ summary: dbs.schedule events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+dbs.schedule EMS events occur when a Distributed Block Store scheduled activity fails to complete.
+
 == dbs.schedule.action.error
 *Severity*::
 ERROR

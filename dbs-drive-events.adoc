@@ -13,6 +13,9 @@ summary: dbs.drive events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+dbs.drive EMS events occur when a distributed block store event related to drive operations occurs.
+
 == dbs.drive
 *Severity*::
 NOTICE

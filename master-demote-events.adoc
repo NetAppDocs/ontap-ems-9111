@@ -13,6 +13,9 @@ summary: master.demote events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+master.demote EMS events occur when ONTAP encounters issues associated with demoting the cluster master.
+
 == master.demote.cm.committed
 *Severity*::
 NOTICE
