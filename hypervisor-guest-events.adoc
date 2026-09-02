@@ -13,6 +13,9 @@ summary: hypervisor.guest events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+hypervisor.guest EMS events occur when ONTAP encounters issues associated with hypervisor guest configuration requirements for ONTAP Select.
+
 == hypervisor.guest.cpu
 *Severity*::
 ALERT

@@ -13,6 +13,9 @@ summary: dbs.disconn events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+dbs.disconn EMS events occur when the Distributed Block Store detects that a remote node is not connected to the cluster network.
+
 == dbs.disconn.remote.node
 *Severity*::
 ERROR

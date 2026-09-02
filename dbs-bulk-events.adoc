@@ -13,6 +13,9 @@ summary: dbs.bulk events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+dbs.bulk EMS events occur when a distributed block store event related to bulk volume operations occurs.
+
 == dbs.bulk.op
 *Severity*::
 NOTICE

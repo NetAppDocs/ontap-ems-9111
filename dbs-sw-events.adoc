@@ -13,6 +13,9 @@ summary: dbs.sw events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+dbs.sw EMS events occur when a Distributed Block Store event related to Software Encryption At Rest occurs.
+
 == dbs.sw.encr.at.rest
 *Severity*::
 NOTICE

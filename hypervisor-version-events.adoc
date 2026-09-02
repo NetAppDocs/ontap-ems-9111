@@ -13,6 +13,9 @@ summary: hypervisor.version events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+hypervisor.version EMS events occur when the hypervisor version is not supported by ONTAP Select.
+
 == hypervisor.version
 *Severity*::
 ALERT

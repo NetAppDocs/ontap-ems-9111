@@ -13,6 +13,9 @@ summary: master.promoting events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+master.promoting EMS events occur when a node is promoted to the cluster master.
+
 == master.promoting.cm
 *Severity*::
 NOTICE

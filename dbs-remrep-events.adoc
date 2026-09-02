@@ -13,6 +13,9 @@ summary: dbs.remrep events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+dbs.remrep EMS events occur when ONTAP encounters issues associated with Distributed Block Store remote replication.
+
 == dbs.remrep.async.dly.exceed
 *Severity*::
 ERROR

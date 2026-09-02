@@ -13,6 +13,9 @@ summary: dbs.remote events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+dbs.remote EMS events occur when a Distributed Block Store event such as a change in cluster pair connectivity status occurs.
+
 == dbs.remote.cluster
 *Severity*::
 NOTICE

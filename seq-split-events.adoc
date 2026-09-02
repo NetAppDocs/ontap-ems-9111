@@ -13,6 +13,9 @@ summary: seq.split events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+seq.split EMS events occur when a LUN create operation is encountered while SnapMirror Synchronous sequential split is enabled.
+
 == seq.split.with.LUN.create
 *Severity*::
 ALERT
